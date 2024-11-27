@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "LogIn";
+}
+
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 85vh; font-family: Arial, sans-serif; background-color: #fafafa; overflow: hidden;">
+    <!-- Правая часть: Форма входа -->
+    <div style="width: 350px; padding: 20px; background-color: white; border: 1px solid #dbdbdb; border-radius: 5px; text-align: center; box-sizing: border-box;">
+        <h1 style="font-family: 'Billabong', cursive; font-size: 40px; margin-bottom: 20px;">Fakers</h1>
+
+        <!-- Форма авторизации -->
+        <form>
+            <div style="margin-bottom: 10px;">
+                <input type="text" placeholder="Email"
+                       style="width: 100%; padding: 8px; border: 1px solid #dbdbdb; border-radius: 3px; background-color: #fafafa; font-size: 14px;">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="password" placeholder="Password"
+                       style="width: 100%; padding: 8px; border: 1px solid #dbdbdb; border-radius: 3px; background-color: #fafafa; font-size: 14px;">
+            </div>
+            <button type="submit"
+                    style="width: 100%; padding: 8px; background-color: #0095f6; color: white; font-weight: bold; border: none; border-radius: 20px; cursor: pointer; font-size: 14px;">
+                Log in
+            </button>
+        </form>
+
+        <!-- Или -->
+        <div style="display: flex; align-items: center; margin: 15px 0;">
+            <div style="flex: 1; height: 1px; background-color: #dbdbdb;"></div>
+            <span style="margin: 0 10px; color: #8e8e8e; font-size: 12px;">OR</span>
+            <div style="flex: 1; height: 1px; background-color: #dbdbdb;"></div>
+        </div>
+
+        <!-- Забыл пароль -->
+        <div>
+            <a href="#" style="font-size: 12px; color: #00376b; text-decoration: none;">Forgot password?</a>
+        </div>
+    </div>
+
+    <!-- Секция регистрации -->
+    <div style="text-align: center; margin-top: 10px; font-size: 12px; color: #8e8e8e;">
+        <p>Don't have an account? <a href="#" style="color: #0095f6;" onclick="window.location.href='/Home/Register';">Sign up</a></p>
+    </div>
+</div>
+
+
+
